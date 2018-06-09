@@ -24,7 +24,14 @@ namespace Nomadvantage.sav
         [BsonElement("avatar_url")]                
         public string AvatarUrl { get; set; }
 
-        [BsonElement("age")]                        
-        public int Age { get; set; }
+        [BsonElement("machineId")]                        
+        public string MachineId { get; set; }
+
+        [BsonElement("repairer")]                        
+        public string Repairer { get; set; }
+
+        [BsonElement("accessories")]                        
+        public string Accessories { get; set; }
+
     }
 }

@@ -83,8 +83,7 @@ namespace Nomadvantage.sav
 
         public static JsonSerializerSettings JsonSettings => new JsonSerializerSettings()
         {
-            Formatting = Formatting.Indented,
-            TypeNameHandling = TypeNameHandling.Objects,
+            Formatting = Formatting.None,
             ContractResolver = new CamelCasePropertyNamesContractResolver()
         };
     }

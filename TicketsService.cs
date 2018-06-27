@@ -34,6 +34,7 @@ namespace Nomadvantage.sav
             var tickets = await MongoConnection.Load(config)
                 .GetCollection<Ticket>("tickets")
                 .Find(_ => true)
+                .SortByDescending(t => t.DateSent)
                 .ToListAsync();
 
             return new JsonResult(tickets, JsonSettings);

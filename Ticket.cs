@@ -1,3 +1,4 @@
+using System;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Bson.Serialization.IdGenerators;
@@ -32,6 +33,9 @@ namespace Nomadvantage.sav
 
         [BsonElement("accessories")]                        
         public string Accessories { get; set; }
+
+        [BsonElement("dateSent")]    
+        public DateTime DateSent { get; set; }
 
     }
 }
